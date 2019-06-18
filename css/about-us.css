@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Roboto');
+
+:root {
+    --blue: #007bff;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --white: #fff;
+    --bg-grey: #e5e8eb;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+    
+body {
+    overflow-x: hidden;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+.headerHeight {
+    min-height: 60vh;
+    border-bottom: 2px solid var(--light);
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url(../img/team-photo1.jpg)center/cover no-repeat fixed;
+}
+
+.nav-link {
+    color: var(--light) !important;
+}
+
+.nav-link:hover {
+    background: var(--light);
+    color: red !important;
+}
+
+#backtotop-btn {
+    position: fixed;
+    top: 90%;
+    left: 90%;
+    z-index: 99;
+    animation: backtotop;
+    animation-delay: .5s;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    
+}
+
+#backtotop-btn:hover {
+}
+
+@keyframes backtotop {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-40%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+section {
+    border-bottom: 2px solid var(--light);
+}
+
+
+.title-underline {
+    height: 4px;
+    width: 150px;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+button:hover {
+     cursor: pointer;
+}

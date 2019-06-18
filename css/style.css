@@ -15,6 +15,10 @@
     --light: #f8f9fa;
     --dark: #343a40;
 }
+
+html {
+    scroll-behavior: smooth;
+}
     
 body {
     overflow-x: hidden;
@@ -24,8 +28,8 @@ body {
 
 .headerHeight {
     min-height: 60vh;
-    border-bottom: 4px solid var(--danger);
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url(../img/header-bg4.jpeg)center/cover no-repeat fixed;
+    border-bottom: 2px solid var(--light);
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url(../img/header-bg4.jpg)center/cover no-repeat fixed;
 }
 
 .nav-link {
@@ -66,7 +70,7 @@ body {
 
 
 section {
-    border-bottom: 1px solid var(--danger);
+    border-bottom: 2px solid var(--light);
 }
 
 
@@ -89,7 +93,7 @@ section {
 
 .aboutbg {
     min-height: 450px;
-    background-image: url(../img/caroimg10.jpeg);
+    background-image: url(../img/caroimg10.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -146,14 +150,36 @@ button:hover {
     transition: 0.5s;
 } 
 
+#events .carousel-item:after {
+  content:"";
+  display:block;
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  background:rgba(0,0,0,0.5);
+}
 
 
+/* OUR-TEAM PAGE */
+#our-team .col {
+    width: 15rem;
+}
 
+#our-team img {
+    border-radius: 8px;
+}
 
+#about-what-we-do img {
+    border-radius: 8px;
+}
 
+#about-what-we-do h3 {
+}
 
-
-
-
-
-
+@media only screen and (max-width: 650px) {
+    .headerHeight h1 {
+        font-size: 2.5rem;
+    }
+}
