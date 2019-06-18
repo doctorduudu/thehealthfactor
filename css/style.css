@@ -30,6 +30,8 @@ body {
     min-height: 60vh;
     border-bottom: 2px solid var(--light);
     background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url(../img/header-bg4.jpg)center/cover no-repeat fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .nav-link {
@@ -96,7 +98,6 @@ section {
     background-image: url(../img/caroimg10.jpg);
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
 }
 
 a {
