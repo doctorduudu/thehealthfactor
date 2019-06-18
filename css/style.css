@@ -29,7 +29,8 @@ body {
 .headerHeight {
     min-height: 60vh;
     border-bottom: 2px solid var(--light);
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url(../img/header-bg4.jpg)center/cover no-repeat fixed;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url(../img/header-bg4.jpg) no-repeat center center fixed;
+    background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
