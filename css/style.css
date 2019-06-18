@@ -29,7 +29,7 @@ body {
 .headerHeight {
     min-height: 60vh;
     border-bottom: 2px solid var(--light);
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url(../img/header-bg4.jpg) no-repeat center center fixed;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url(../img/header-bg4.jpg) no-repeat center fixed;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -97,7 +97,7 @@ section {
 
 .aboutbg {
     min-height: 450px;
-    background: url(../img/caroimg10.jpg) no-repeat center center fixed;
+    background: url(../img/caroimg10.jpg) no-repeat center fixed;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
