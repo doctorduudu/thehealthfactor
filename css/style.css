@@ -17,7 +17,6 @@
 }
 
 html {
-    scroll-behavior: smooth;
 }
     
 body {
@@ -27,14 +26,15 @@ body {
 }
 
 .headerHeight {
-    min-height: 60vh;
+    min-height: 55vh;
     border-bottom: 2px solid var(--light);
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url(../img/header-bg4.jpg) no-repeat center center fixed;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url(../img/header-bg4.jpg) no-repeat center center;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
 }
+
 
 .nav-link {
     color: var(--light) !important;
@@ -48,8 +48,9 @@ body {
 #backtotop-btn {
     position: fixed;
     top: 90%;
-    left: 90%;
+    left: 88%;
     z-index: 99;
+    
     animation: backtotop;
     animation-delay: .5s;
     animation-duration: 0.5s;
@@ -87,6 +88,20 @@ section {
     background-color: var(--bg-grey);
 }
 
+#about-text {
+    max-height: 310px;
+    overflow: hidden;
+}
+
+.aboutbg {
+    min-height: 450px;
+    background: url(../img/caroimg10.jpg) no-repeat center center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
 .card:hover {
     -webkit-box-shadow: -1px 9px 40px -12px rgba(0,0,0,0.75);
     -moz-box-shadow: -1px 9px 40px -12px rgba(0,0,0,0.75);
@@ -95,14 +110,6 @@ section {
     transition: 0.5s;
 }
 
-.aboutbg {
-    min-height: 450px;
-    background: url(../img/caroimg10.jpg) no-repeat center center fixed;
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-}
 
 a {
     text-decoration: none !important;
@@ -184,7 +191,24 @@ button:hover {
 }
 
 @media only screen and (max-width: 650px) {
+    
+}
+
+@media only screen and (max-width: 960px) {
+    .headerHeight {
+        min-height: 50vh;
+    }
+}
+
+@media only screen and (max-width: 650px) {
     .headerHeight h1 {
         font-size: 2.5rem;
+    }
+    .headerHeight {
+        min-height: 40vh;
+    }
+    
+    .header-content {
+        margin: 0 3px !important;
     }
 }
