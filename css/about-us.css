@@ -29,7 +29,7 @@ body {
 .headerHeight {
     min-height: 60vh;
     border-bottom: 2px solid var(--light);
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url(../img/team-photo1.jpg) no-repeat center center fixed;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url(../img/team-photo1.jpg) no-repeat center center;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -48,16 +48,12 @@ body {
 #backtotop-btn {
     position: fixed;
     top: 90%;
-    left: 90%;
-    z-index: 99;
+    left: 88%;
+    z-index: 99;   
     animation: backtotop;
     animation-delay: .5s;
     animation-duration: 0.5s;
-    animation-iteration-count: infinite;
-    
-}
-
-#backtotop-btn:hover {
+    animation-iteration-count: infinite;    
 }
 
 @keyframes backtotop {

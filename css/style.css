@@ -17,6 +17,7 @@
 }
 
 html {
+    scroll-behavior: smooth;
 }
     
 body {
@@ -49,16 +50,11 @@ body {
     position: fixed;
     top: 90%;
     left: 88%;
-    z-index: 99;
-    
+    z-index: 99;   
     animation: backtotop;
     animation-delay: .5s;
     animation-duration: 0.5s;
-    animation-iteration-count: infinite;
-    
-}
-
-#backtotop-btn:hover {
+    animation-iteration-count: infinite;   
 }
 
 @keyframes backtotop {
